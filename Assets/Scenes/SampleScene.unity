@@ -1155,7 +1155,7 @@ GameObject:
   - component: {fileID: 476468568}
   - component: {fileID: 476468569}
   m_Layer: 0
-  m_Name: weapon_bow_2
+  m_Name: Staff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1217,7 +1217,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 11
-  m_Sprite: {fileID: 21300000, guid: 054f96e012893d54bbb9a0c1967eeb0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7776b1ab76c1ceb468f15149f30eac65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.41960785}
   m_FlipX: 0
   m_FlipY: 0
@@ -2678,6 +2678,7 @@ GameObject:
   - component: {fileID: 1140207958}
   - component: {fileID: 1140207961}
   - component: {fileID: 1140207960}
+  - component: {fileID: 1140207963}
   - component: {fileID: 1140207957}
   - component: {fileID: 1140207956}
   - component: {fileID: 1140207955}
@@ -2895,6 +2896,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1140207963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140207951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0fe7dcd8d143504daa51c1e6fb64386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armPivot: {fileID: 739187299}
+  characterRenderer: {fileID: 476468569}
 --- !u!1 &1155382747
 GameObject:
   m_ObjectHideFlags: 0
@@ -6427,8 +6442,8 @@ Tilemap:
   - first: {x: -14, y: 5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6627,8 +6642,8 @@ Tilemap:
   - first: {x: 6, y: 5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7046,7 +7061,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 30
+  - m_RefCount: 28
     m_Data: {fileID: 11400000, guid: c641b483daaf31d4481b3a1cc29a624f, type: 2}
   - m_RefCount: 31
     m_Data: {fileID: 11400000, guid: e511e482c27f1c844ad79282d777326e, type: 2}
@@ -7056,8 +7071,12 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 6b34b2817262bbb45884e40151e195ac, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a8175632af0c93542be8f0b5204d66fa, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 4aa37d8cc61623c4792da8dd28d19ae8, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 9320761beddfbdf4495a7b713999c546, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 30
+  - m_RefCount: 28
     m_Data: {fileID: 21300000, guid: 9ea6057cf026dd8429e5ed8840371296, type: 3}
   - m_RefCount: 31
     m_Data: {fileID: 21300000, guid: 39cfc7865dfa2af4faa28da573b24aae, type: 3}
@@ -7067,6 +7086,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 69c1794ce4cc7dd4f9f8dad989ed5f83, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: c261609b233e47743920d7bac7079c50, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 94b2ac135656bc647810b0b00e094f98, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: cbde5d9c85ccb0d4c80d7bb817d63f9d, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 64
     m_Data:
