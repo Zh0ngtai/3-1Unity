@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class TopDownAimRotation : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer armRenderer;
     [SerializeField] private Transform armPivot;
-
     [SerializeField] private SpriteRenderer characterRenderer;
 
     private TopDownCharacterController _controller;
@@ -30,8 +28,7 @@ public class TopDownAimRotation : MonoBehaviour
     {
         float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        armRenderer.flipY = Mathf.Abs(rotZ) > 90f;
-        characterRenderer.flipX = armRenderer.flipY;
+        characterRenderer.flipX = direction.x < 0; // 시선 방향에 따라 캐릭터를 뒤집습니다.
         armPivot.rotation = Quaternion.Euler(0, 0, rotZ);
     }
 }

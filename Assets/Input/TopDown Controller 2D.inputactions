@@ -22,15 +22,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Fire",
-                    "type": "Value",
-                    "id": "9b55cb21-336f-48cf-904b-9f84d02ecfed",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -97,17 +88,6 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3c84cfe3-9781-4eac-a5d9-24f275cfba69",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
